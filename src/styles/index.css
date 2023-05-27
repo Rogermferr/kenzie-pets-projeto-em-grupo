@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+.header__container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding: 1rem;
+  width: 100%;
+
+  background-color: var(--color-white);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+}
+
+.header__div--mobile{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__div--mobile > h1{
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--color-purple);
+}
+
+.header__div--btns{
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.header__div--btns > button{
+  width: 50%;
+  border-radius: var(--border-radius-button);
+  padding: 0.5rem 0;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#login{
+  border: solid 2px var(--color-purple);
+  color: var(--color-purple);
+  background-color: var(--color-white);
+}
+
+#signup{
+  border: solid 2px var(--color-purple);
+  color: var(--color-white);
+  background-color: var(--color-purple);
+}
+
+.hidden{
+  display: none;
+}
+
+main{
+  margin-top: 100px;
+
+  position: relative;
+}
+
+#select_species{
+  position: absolute;
+  top: -2rem;
+  right: 7.5rem;
+  background-color: var(--color-white);
+  padding: 0.2rem 1rem;
+  border: solid 2px var(--color-purple);
+  border-radius: var(--border-radius-button);
+  color: var(--color-purple);
+}
+
+#search_specie{
+  position: absolute;
+  top: -2rem;
+  right: 1.5rem;
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  font-size: 1rem;
+  border: solid 1px var(--color-purple);
+  border-radius: var(--border-radius-button);
+  padding: 0.2rem 1rem;
+}
+
+.modal_container{
+  width: 520px;
+  height: 380px;
+  border-radius: 5px;
+  border-bottom: solid 12px var(--color-purple);
+  border-top: solid 6px var(--color-purple);
+  padding: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.background_botao{
+  background-color: var(--color-purple);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.botao_fechar{
+  margin-bottom: 9px;
+  margin-right: 9px;
+  cursor: pointer;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.titulo_modal{
+  font-family: 'Open sans';
+  font-size: 24px;
+  color: var(--color-purple);
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.input{
+  width: 285px;
+  height: 27px;
+  border: solid 1px var(--color-light-purple);
+  border-radius: 16px;
+  padding: 2px 10px;
+}
+
+.input::placeholder{
+  color: var(--color-light-purple);
+}
+
+.button_replace{
+  cursor: pointer;
+  background-color: var(--color-white);
+  border: none;
+  color: var(--color-purple);
+  text-decoration: underline;
+}
+
+.botao_entrar{
+  width: 305px;
+  height: 27px;
+  border-radius: 16px;
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  border: none;
+  padding: 4px 15px;
+}
+
+.modal_footer{
+  font-family: 'Open Sans';
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.formulario_cadastro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.titulo_modal_cadastro{
+  font-family: 'Open sans';
+  font-size: 24px;
+  color: var(--color-purple);
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.all_pets{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.cardPet{
+  width: 200px;
+  height: auto;
+  box-shadow: 0 0 7px 0 rgba(78, 32, 150, 0.25);
+  border-radius: var(--border-radius-default);
+  margin-bottom: 3rem;
+}
+
+.avatar{
+  width: 200px;
+  height: 200px;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+}
+
+.namePet{
+  margin-left: 1rem;
+  color: var(--color-purple);
+  font-family: 'Open Sans';
+  font-weight: 700;
+}
+
+.species{
+  margin-left: 1rem;
+  font-size: 14px;
+  color: var(--color-purple);
+  font-weight: 400;
+}
+
+.footer__container{
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  padding: 1rem 0;
+
+  background-color: var(--color-light-grey);
+  color: var(--color-purple);
+  font-size: 1rem;
+
+  position: fixed;
+  bottom: 0;
+}
+
+@media (min-width: 769px) {
+
+  .header__container{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      
+      padding: 1rem 6rem;
+  }
+
+  .header__div--mobile > h1{
+      font-size: 1.75rem;
+  }
+  
+  .header__div--mobile > span{
+      display: none;
+  }
+
+  .header__div--btns > button{
+      width: 6rem;
+  }
+
+  #login{
+      margin-right: 1.5rem;
+
+      transition: all 0.3s ease-in;
+      transition-delay: 0.05s;
+  }
+
+  #login:hover{
+      transform: scale(1.1);
+      border: solid 2px var(--color-purple);
+      color: var(--color-white);
+      background-color: var(--color-purple);
+
+      cursor: pointer;
+  }
+
+  #signup{
+      transition: all 0.3s ease-in;
+      transition-delay: 0.05s;
+  }
+
+  #signup:hover{
+      transform: scale(1.1);
+
+      cursor: pointer;
+  }
+
+  .hidden{
+    display: block;
+  }
+
+  #select_species{
+    top: -1rem;
+    right: 10rem;
+  }
+  
+  #search_specie{
+    top: -1rem;
+    right: 4rem;
+  }
+
+.modal_container{
+  width: 520px;
+  height: 380px;
+  border-radius: 5px;
+  border-bottom: solid 12px var(--color-purple);
+  border-top: solid 6px var(--color-purple);
+  padding: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.all_pets{
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 10px;
+}
+
+.cardPet{
+  margin-right: 3rem;
+  margin-bottom: none;
+}
+
+.namePet{
+  margin-left: 1rem;
+  color: var(--color-purple);
+  font-family: 'Open Sans';
+  font-weight: 700;
+}
+
+.species{
+  margin-left: 1rem;
+  font-size: 14px;
+  color: var(--color-purple);
+  font-weight: 400;
+}
+
+}

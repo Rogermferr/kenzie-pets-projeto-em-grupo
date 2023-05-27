@@ -1,0 +1,21 @@
+:root{
+    --color-purple: #4E2096;
+    --color-green: #33CC66;
+    --color-red: #EA534A;
+    --color-light-purple: #B48CF2;
+    --color-purple-footer: #F1EEF7;
+    --color-black: #1B1C1E;
+    --color-grey: #90A4AE;
+    --color-light-grey: #F1EEF7; 
+    --color-white: #FFFFFF;
+    --color-body-background: #F5F5F5;
+    --border-radius-default: 0.25rem;
+    --border-radius-button: 1.25rem;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--color-body-background);
+    width: 100vw;
+    height: 100vh;
+}

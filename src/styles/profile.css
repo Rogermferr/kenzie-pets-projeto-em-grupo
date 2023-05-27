@@ -1,0 +1,692 @@
+.header__container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--color-white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+    
+.header__div--mobile{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__div--mobile > h1{
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--color-purple);
+}
+
+.header__div--btns{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.header__div--btns > button{
+    width: 50%;
+    border-radius: var(--border-radius-button);
+    padding: 0.5rem 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#home{
+    border: solid 2px var(--color-purple);
+    color: var(--color-purple);
+    background-color: var(--color-white);
+
+    transition: all 0.3s ease-in;
+    transition-delay: 0.05s;
+}
+
+#home:hover{
+    transform: scale(1.1);
+    border: solid 2px var(--color-purple);
+    color: var(--color-white);
+    background-color: var(--color-purple);
+
+    cursor: pointer;
+}
+
+#logout{
+    border: solid 2px var(--color-purple);
+    color: var(--color-white);
+    background-color: var(--color-purple);
+    
+    transition: all 0.3s ease-in;
+    transition-delay: 0.05s;
+}
+
+#logout:hover{
+    transform: scale(1.1);
+
+    cursor: pointer;
+}
+
+main{
+    margin-top: 80px;
+}
+
+.section__user--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 50%;
+
+    position: relative;
+
+    margin-bottom: 1rem;
+}
+
+.section__div--color{
+    width: 100%;
+    height: 30vh;
+
+    background-color: var(--color-purple);
+
+}
+
+.section__user--container > img{
+    border: solid 5px var(--color-white);
+    border-radius: 50%;
+
+    width: 250px;
+    height: 250px;
+
+    position: absolute;
+    top: 2rem;
+}
+
+.div__user--info{
+    margin-top: 150px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    padding: 1rem;
+    width: 90vw;
+
+    border: solid 2px #4d20963a;
+    border-radius: var(--border-radius-default);
+}
+
+.div__user--info > h3{
+    color: var(--color-purple);
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    margin: 0 auto
+}
+
+.div__user--info > p{
+    color: var(--color-purple);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.div__user--info > p > span{
+    color: var(--color-black);
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.div__user--btns{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    gap: 1rem;
+}
+
+.update__user--info{
+    font-size: 1rem;
+    color: var(--color-white);
+
+    background-color: var(--color-purple);
+    border: solid 1px var(--color-purple);
+    border-radius: var(--border-radius-button);
+
+    padding: 0.5rem 1rem;
+
+    transition: all 0.3s ease-in;
+    transition-delay: 0.05s;
+}
+
+.update__user--info:hover{
+    transform: scale(1.1);
+
+    cursor: pointer;
+}
+
+.delete__user--account{
+    font-size: 1rem;
+    color: var(--color-red);
+
+    background-color: var(--color-white);
+    border: solid 1px var(--color-red);
+    border-radius: var(--border-radius-button);
+
+    padding: 0.5rem 1rem;
+    
+    transition: all 0.3s ease-in;
+    transition-delay: 0.05s;
+}
+
+.delete__user--account:hover{
+    transform: scale(1.1);
+    color: var(--color-white);
+    background-color: var(--color-red);
+
+    cursor: pointer;
+}
+
+.section__pets--container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    height: 50%;
+    width: 100%;
+
+    margin: 0 auto;
+
+    padding: 1rem;
+}
+
+.register__pet--btn{
+    font-size: 1rem;
+    color: var(--color-white);
+
+    background-color: var(--color-green);
+    border: solid 1px var(--color-green);
+    border-radius: var(--border-radius-button);
+
+    padding: 0.5rem 1rem;
+    margin-right: auto;
+    
+    transition: all 0.3s ease-in;
+    transition-delay: 0.05s;
+}
+
+.register__pet--btn:hover{
+    transform: scale(1.1);
+
+    cursor: pointer;
+}
+
+.list__pets--container{
+    display: flex;
+    gap: 1rem;
+
+    width: 100%;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+
+.list__item{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    /* border: solid 2px #4d20963a; */
+    border-radius: var(--border-radius-default);
+    box-shadow: 0 0 7px 0 rgba(78, 32, 150, 0.25);
+    
+    transition: all 0.3s;
+}
+
+.list__item:hover{
+    background-color: var(--color-light-grey);
+}
+
+.div__pet--image{
+    width: 220px;
+    height: 240px;
+}
+
+.div__pet--image > img{
+    width: 220px;
+    height: 240px;
+    object-fit: cover;
+
+    border-radius: var(--border-radius-default) 0 0 var(--border-radius-default);
+}
+
+.div__pet--info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    padding: 1rem 0;
+    width: 200px;
+}
+
+.div__pet--info > p{
+    color: var(--color-purple);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.div__pet--info > p > span{
+    color: var(--color-black);
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.update__pet--info{
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-white);
+
+    background-color: var(--color-purple);
+    border: solid 1px var(--color-purple);
+    border-radius: var(--border-radius-button);
+
+    padding: 0.5rem 1rem;
+    margin-right: auto;
+    
+    transition: all 0.3s ease-in;
+    transition-delay: 0.05s;
+}
+
+.update__pet--info:hover{
+    transform: scale(1.1);
+
+    cursor: pointer;
+}
+
+.delete__pet--btn{
+    font-size: 1rem;
+    color: var(--color-red);
+
+    background-color: var(--color-white);
+    border: solid 1px var(--color-red);
+    border-radius: var(--border-radius-button);
+
+    padding: 0.5rem 1.5rem;
+    margin-right: auto;
+
+    transition: all 0.3s;
+}
+
+.delete__pet--btn:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color: var(--color-red);
+
+    cursor: pointer;
+}
+
+.footer__container{
+    display: flex;
+    justify-content: center;
+
+    padding: 1rem 0;
+
+    background-color: var(--color-light-grey);
+    color: var(--color-purple);
+    font-size: 1rem;
+}
+
+.hidden{
+    display: none;
+}
+
+.delete__user--modal,
+.update__user--modal,
+.register__pet--modal,
+.update__pet--modal{
+    position: fixed;
+
+    padding: 3rem 0 1rem 0;
+    border: none;
+    border-radius: var(--border-radius-button);
+
+    height: 70vh;
+    width: 90%;
+
+    background-color: var(--color-purple);
+}
+
+.close__delete--user,
+.close__update--user,
+.close__register--pet,
+.close__update--pet,
+.close__delete--pet{
+    position: absolute;
+    top: 1rem;
+    right: 0.5rem;
+
+    cursor: pointer;
+}
+
+.delete__user--div,
+.update__user--form,
+.register__pet--form,
+.update__pet--form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+
+    height: 100%;
+    padding: 1rem;
+    background-color: var(--color-white);
+}
+
+.delete__user--div > h2,
+.update__user--form > h2,
+.register__pet--form > h2,
+.update__pet--form > h2{
+    font-size: 1.5rem;
+    color: var(--color-purple);
+    font-weight: bold;
+    text-align: center;
+    line-height: 150%;
+}
+
+.delete__user--div > button{
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#no_delete{
+    font-size: 1rem;
+    color: var(--color-white);
+
+    background-color: var(--color-purple);
+    border: solid 1px var(--color-purple);
+    border-radius: var(--border-radius-button);
+
+    padding: 0.5rem 1rem;
+}
+
+#delete_user{
+    font-size: 1rem;
+    color: var(--color-red);
+
+    background-color: var(--color-white);
+    border: solid 1px var(--color-red);
+    border-radius: var(--border-radius-button);
+
+    padding: 0.5rem 1rem;
+}
+
+.update__user--form > input,
+.register__pet--form > input,
+.update__pet--form > input,
+.register__pet--form > select,
+.update__pet--form > select{
+    border: solid 1px var(--color-light-purple);
+    border-radius: var(--border-radius-button);
+
+    color: var(--color-light-purple);
+    font-size: 1rem;
+
+    padding: 0.5rem;
+    background-color: var(--color-white);
+}
+
+.update__user--form > input::placeholder,
+.register__pet--form > input::placeholder,
+.update__pet--form > input::placeholder {
+    color: var(--color-light-purple);
+    font-family: 'Open Sans', sans-serif;
+}
+
+#update_user,
+#register_pet,
+#update_pet{
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-white);
+
+    background-color: var(--color-purple);
+    border: solid 1px var(--color-purple);
+    border-radius: var(--border-radius-button);
+
+    padding: 0.5rem 1rem;
+}
+
+.delete__pet--modal{
+    width: 90%;
+    height: 40vh;
+    padding: 0;
+    border: solid 1px;
+
+    border: none;
+    border-radius: var(--border-radius-button);
+    padding: 3rem 0 1rem 0;
+    background-color: var(--color-purple);
+
+    position: fixed;
+}
+
+.delete__pet--div{
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--color-white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.delete__pet--div > h2{
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--color-purple);
+    text-align: center;
+    line-height: 150%;
+}
+
+.delete__pet--div > button{
+    font-size: 1rem;
+    color: var(--color-red);
+
+    background-color: var(--color-white);
+    border: solid 1px var(--color-red);
+    border-radius: var(--border-radius-button);
+
+    width: 50%;
+    padding: 0.5rem 2rem;
+    transition: all 0.3s;
+}
+
+.delete__pet--div > button:hover{
+    color: var(--color-white);
+    background-color: var(--color-red);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+@media (min-width: 900px){
+
+    .header__container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 1rem 6rem;
+    }
+
+    .header__div--mobile > h1{
+        font-size: 1.75rem;
+    }
+
+    .header__div--mobile > span{
+        display: none;
+    }
+
+    .header__div--btns > button{
+        width: 6rem;
+    }
+
+    #home{
+        margin-right: 1.5rem;
+        transition: all 0.3s ease-in;
+        transition-delay: 0.05s;
+    }
+
+    #home:hover{
+        transform: scale(1.1);
+        border: solid 2px var(--color-purple);
+        color: var(--color-white);
+        background-color: var(--color-purple);
+        cursor: pointer;
+    }
+
+    #logout{
+        transition: all 0.3s ease-in;
+        transition-delay: 0.05s;
+    }
+
+    #logout:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+
+    }
+
+    .section__div--color{
+        height: 25vh;
+    }
+
+    .div__user--info{
+        width: 30vw;
+    }
+
+
+    .update__user--info{
+        transition: all 0.3s ease-in;
+        transition-delay: 0.05s;
+    }
+
+    .update__user--info:hover{
+        transform: scale(1.1);
+
+        cursor: pointer;
+    }
+
+    .delete__user--account{
+        transition: all 0.3s ease-in;
+        transition-delay: 0.05s;
+    }
+
+    .delete__user--account:hover{
+        transform: scale(1.1);
+        border: solid 2px var(--color-red);
+        color: var(--color-white);
+        background-color: var(--color-red);
+
+        cursor: pointer;
+    }
+
+    .section__pets--container{
+        padding: 6rem 0;
+        gap: 2rem;
+        width: 70%;
+    }
+
+
+    .register__pet--btn{
+        transition: all 0.3s ease-in;
+        transition-delay: 0.05s;
+    }
+
+    .register__pet--btn:hover{
+        transform: scale(1.1);
+
+        cursor: pointer;
+    }
+
+    .update__pet--info {
+        transition: all 0.3s ease-in;
+        transition-delay: 0.05s;
+    }
+
+    .update__pet--info:hover{
+        transform: scale(1.1);
+
+        cursor: pointer;
+    }
+
+    .list__pets--container{
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .delete__user--modal,
+    .update__user--modal,
+    .register__pet--modal,
+    .update__pet--modal {
+        padding: 4rem 0 1.5rem 0;
+
+        height: 60vh;
+        width: 40vw;
+    }
+
+    .close__delete--user,
+    .close__update--user,
+    .close__register--pet,
+    .close__update--pet{
+        top: 1.5rem;
+        right: 1rem;
+
+        cursor: pointer;
+    }
+
+    .delete__user--div,
+    .update__user--form,
+    .register__pet--form,
+    .update__pet--form{
+        padding: 2rem 6rem;
+    }
+
+    .delete__user--div > h2,
+    .update__user--form > h2,
+    .register__pet--form > h2,
+    .update__pet--form > h2{
+        font-size: 1.75rem;
+    }
+
+    .delete__user--div > button,
+    #update_user,
+    #register_pet,
+    #update_pet {
+        cursor: pointer;
+    }
+
+    #delete_user{
+        transition: all 0.3s;
+    }
+
+    #delete_user:hover{
+        background-color: var(--color-red);
+        color: var(--color-white);
+    }
+
+    .delete__pet--modal{
+        width: 50vw;
+        height: 30vh;
+    }
+}

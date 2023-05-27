@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+
+    <script
+      src="https://kit.fontawesome.com/16370eced5.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- toastify -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+      defer
+    ></script>
+
+    <script src="./src/scripts/menuMobile.js" defer></script>
+    <script type="module" src="./src/scripts/index.js" defer></script>
+    <title>KenziePets</title>
+  </head>
+  <body>
+    <header class="header__container">
+      <div class="header__div--mobile">
+        <h1>KenziePets</h1>
+        <span><i class="fa-solid fa-bars"></i></span>
+      </div>
+      <div class="header__div--btns hidden">
+        <button id="login">Login</button>
+        <button id="signup">Cadastro</button>
+      </div>
+    </header>
+    <main>
+      <section>
+
+        <select name="species" id="select_species">
+          <option value="">Selecione uma espécie</option>
+          <option value="Cachorro">Cachorro</option>
+          <option value="Gato">Gato</option>
+          <option value="Aves">Aves</option>
+          <option value="Repteis">Répteis</option>
+        </select>
+        <button id="search_specie">Buscar</button>
+
+        <ul class="all_pets"></ul>
+      </section>
+
+      <dialog class="modal_container" id="modalLogin">
+        <p class="background_botao">
+          <img
+            src="./src/assets/fechar.jpeg"
+            alt="fechar modal"
+            class="botao_fechar"
+          />
+        </p>
+        <form action="" class="formulario">
+          <h1 class="titulo_modal">Login</h1>
+          <input type="email" name="email" placeholder="E-mail" class="input" />
+          <input
+            type="password"
+            name="password"
+            placeholder="Senha"
+            class="input"
+          />
+          <button class="botao_entrar">Entrar</button>
+          <p class="modal_footer">
+            Não tem cadastro?
+            <button type="button" id="button_replace_sign" class="button_replace">Clique aqui</button> para
+            se cadastrar.
+          </p>
+        </form>
+      </dialog>
+
+      <dialog class="modal_container" id="modalSign">
+        <p class="background_botao">
+          <img
+            src="./src/assets/fechar.jpeg"
+            alt="botão fechar"
+            class="botao_fechar"
+            id="closeSign"
+          />
+        </p>
+        <form action="" class="formulario_cadastro">
+          <h1 class="titulo_modal_cadastro">Cadastrar</h1>
+          <input type="text" name="name" placeholder="Seu nome" class="input" />
+          <input
+            type="email"
+            name="email"
+            placeholder="Seu e-mail"
+            class="input"
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Sua senha"
+            class="input"
+          />
+          <input
+            type="text"
+            name="avatar_url"
+            placeholder="Sua foto"
+            class="input"
+          />
+          <button type="submit" class="botao_entrar">Cadastrar</button>
+          <p class="modal_footer">
+            Já tem cadastro?
+            <button type="button" id="button_replace" class="button_replace">Clique aqui</button> para
+            logar
+          </p>
+        </form>
+      </dialog>
+
+    </main>
+    <footer class="footer__container">
+      <span>KenziePets | Todos os Direitos Reservados</span>
+    </footer>
+  </body>
+</html>
